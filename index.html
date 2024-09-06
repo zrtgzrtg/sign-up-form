@@ -34,23 +34,40 @@
             <ul>
               <li>
                 <label for="first-name">First Name</label
-                ><input type="text" for="first-name" name="first-name" />
+                ><input
+                  type="text"
+                  for="first-name"
+                  name="first-name"
+                  required
+                />
               </li>
               <li>
                 <label for="last-name">Last Name</label
-                ><input type="text" for="last-name" name="last-name" />
+                ><input type="text" for="last-name" name="last-name" required />
               </li>
               <li>
                 <label for="email">Email</label
-                ><input type="email" for="email" name="email" />
+                ><input type="email" for="email" name="email" required />
               </li>
               <li>
                 <label for="phone-number">Phone Number</label
-                ><input type="tel" for="phone-number" name="phone-number" />
+                ><input
+                  type="tel"
+                  for="phone-number"
+                  name="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
               </li>
               <li>
-                <label for="password">password</label
-                ><input type="password" for="password" name="password" />
+                <label for="password">Password</label
+                ><input
+                  type="password"
+                  for="password"
+                  name="password"
+                  required
+                  minlength="8"
+                  maxlength="16"
+                />
               </li>
               <li>
                 <label for="confirm-password">Confirm Password</label
@@ -58,6 +75,9 @@
                   type="password"
                   for="confirm-password"
                   name="confirm-password"
+                  required
+                  minlength="8"
+                  maxlength="16"
                 />
               </li>
             </ul>
@@ -68,7 +88,9 @@
           <div class="submit-button-container">
             <button form="my-form" type="submit">Create Account</button>
           </div>
-          Already have an account? <a href="login">Log in</a>
+          <div class="have-account">
+            Already have an account? <a href="login">Log in</a>
+          </div>
         </div>
       </div>
     </div>
